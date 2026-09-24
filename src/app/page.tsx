@@ -8,6 +8,7 @@ export default function Home() {
       {/* <h1>FitLog</h1> */}
       <Hero></Hero>
       <WorkoutLibrary></WorkoutLibrary>
+      
     </main>
   );
 }
