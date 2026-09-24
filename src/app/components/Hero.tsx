@@ -24,12 +24,12 @@ const Hero = () => {
                     </p>
 
                     <div>
-                        <Link
+                        <a
                             href="#library"
                             className="inline-block bg-[#C2F800] px-5 py-3 font-bold text-black transition hover:scale-105"
                         >
                             BROWSE WORKOUTS
-                        </Link>
+                        </a>
                     </div>
                 </div>
 

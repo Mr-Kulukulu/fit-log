@@ -6,7 +6,7 @@ import { RxHamburgerMenu } from "react-icons/rx";
 
 const Navbar = () => {
     return (
-        <nav className="border-b border-gray-400">
+        <nav className=" sticky top-0 z-50 bg-[#111318] border-b border-gray-400">
             {/* Mobile Navbar */}
             <div className="grid grid-cols-3 items-center p-4 md:hidden">
 
