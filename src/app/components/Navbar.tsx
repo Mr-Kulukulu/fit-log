@@ -3,8 +3,12 @@
 import Image from "next/image";
 import Link from "next/link";
 import { RxHamburgerMenu } from "react-icons/rx";
+import useWorkout from "../hooks/useWorkout";
+import { useState } from "react";
 
 const Navbar = () => {
+    const  {plan,saved} = useWorkout()
+    const [state,setState]= useState(false)
     return (
         <nav className=" sticky top-0 z-50 bg-[#111318] border-b border-gray-400">
             {/* Mobile Navbar */}
@@ -59,7 +63,7 @@ const Navbar = () => {
                 </Link>
 
                 {/* Navigation */}
-                <div className="flex items-center gap-2">
+                <div className="flex items-center gap-2 ">
                     <Link
                         href="/"
                         className="btn btn-neutral btn-outline"
@@ -81,14 +85,14 @@ const Navbar = () => {
                         href="/my-plan"
                         className="rounded-full bg-[#ccff00] px-4 py-2 text-sm font-bold text-black transition hover:scale-105"
                     >
-                        Plan 0
+                        Plan {plan.length}
                     </Link>
 
                     <Link
                         href="/my-plan"
                         className="rounded-full border border-[#ccff00] px-4 py-2 text-sm font-bold text-[#ccff00] transition hover:bg-[#ccff00] hover:text-black"
                     >
-                        Saved 0
+                        Saved {saved.length}
                     </Link>
                 </div>
             </div>

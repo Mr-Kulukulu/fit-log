@@ -1,4 +1,5 @@
 
+import WorkoutActions from "@/app/components/WorkoutActions";
 import { IWorkout } from "@/app/types/workout";
 import Image from "next/image";
 import React from "react";
@@ -89,21 +90,7 @@ const WorksoutDetailsPage = async ({
         </div>
 
         {/* Buttons */}
-        <div className="flex flex-wrap gap-2">
-          <button className="rounded-2xl bg-[#C2F800] p-3 text-black transition hover:scale-105">
-            <span className="flex items-center justify-center gap-2">
-              <FaCalendarPlus />
-              Add to today's plan
-            </span>
-          </button>
-
-          <button className="rounded-2xl border border-gray-400 bg-transparent p-3 text-white transition hover:bg-white hover:text-black">
-            <span className="flex items-center justify-center gap-2">
-              <FaCalendarPlus />
-              Save for later
-            </span>
-          </button>
-        </div>
+       <WorkoutActions workouts={workouts}></WorkoutActions>
       </div>
     </div>
   );
