@@ -4,7 +4,7 @@ FitLog is a modern and responsive workout library built with **Next.js, TypeScri
 
 ## 🚀 Live Website
 
-**Live Demo:** `https://your-vercel-url.vercel.app](https://fit-log-fawn.vercel.app/`
+**Live Demo:** https://fit-log-fawn.vercel.app/
 
 ## 📌 Project Description
 
