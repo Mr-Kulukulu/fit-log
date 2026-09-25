@@ -2,8 +2,9 @@
 import WorkoutActions from "@/app/components/WorkoutActions";
 import { IWorkout } from "@/app/types/workout";
 import Image from "next/image";
-import React from "react";
-import { FaCalendarPlus } from "react-icons/fa";
+import { notFound } from "next/navigation";
+
+
 
 const WorksoutDetailsPage = async ({
   params,
@@ -17,7 +18,8 @@ const WorksoutDetailsPage = async ({
   );
 
   if (!res.ok) {
-    throw new Error("Workout not found");
+    throw new Error(notFound());
+    
   }
 
   const workouts: IWorkout = await res.json();
