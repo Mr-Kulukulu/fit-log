@@ -266,7 +266,7 @@ npm start
 
 The project is deployed using **Vercel**.
 
-**Live Demo:** `https://your-vercel-url.vercel.app`
+**Live Demo:** https://fit-log-fawn.vercel.app/
 
 ## 👨‍💻 Developer
 
