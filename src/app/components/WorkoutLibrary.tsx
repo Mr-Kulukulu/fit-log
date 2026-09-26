@@ -3,7 +3,7 @@ import { IWorkout } from "../types/workout";
 import WorkoutCard from "./WorkoutCard";
 
 const getWorkoutData = async (): Promise<IWorkout[]> => {
-    const res = await fetch("https://api.abcz.workers.dev/api/fitlog");
+    const res = await fetch("https://api.abcz.workers.dev/api/fitlog",{cache:'force-cache'});
 
     if (!res.ok) {
         throw new Error("Workout Data Fetch Failed");

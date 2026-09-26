@@ -120,16 +120,16 @@ const Navbar = () => {
                 <div className="flex justify-end gap-1">
                     <Link
                         href="/my-plan"
-                        className="rounded-full bg-[#ccff00] px-2 py-1 text-xs font-bold text-black"
+                        className="rounded-full bg-[#ccff00] px-2 py-1 text-[9px] font-bold text-black"
                     >
-                        {plan.length}
+                      Plan {plan.length}
                     </Link>
 
                     <Link
                         href="/my-plan"
-                        className="rounded-full border border-[#ccff00] px-2 py-1 text-xs font-bold text-[#ccff00]"
+                        className="rounded-full border border-[#ccff00] px-2 py-1 text-[9px] font-bold text-[#ccff00]"
                     >
-                        {saved.length}
+                        saved{saved.length}
                     </Link>
                 </div>
             </div>
